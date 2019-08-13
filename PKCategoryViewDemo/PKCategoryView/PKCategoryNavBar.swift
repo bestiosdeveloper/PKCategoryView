@@ -62,6 +62,10 @@ public class PKCategoryNavBar: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func setBadge(count: Int, atIndex index: Int) {
+        self.buttons[index].badgeCount = count
+    }
 }
 
 //MARK:- Subviews Setup

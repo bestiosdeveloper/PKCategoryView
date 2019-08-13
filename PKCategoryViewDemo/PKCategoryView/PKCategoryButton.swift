@@ -106,10 +106,23 @@ class PKCategoryButton: UIButton {
         let textWidth = self.textSizeCount(forString: (titleLabel?.text ?? "b"), withFont: titleLabel?.font ?? _normalFont, bundingSize: frame.size).width
         let extraWidthSpace = (frame.size.width - textWidth) / 2.0
         
-        let extraHeightSpace = (frame.size.height - (titleLabel?.font ?? _normalFont).lineHeight) / 2.0
+        let extraHeightSpace = (frame.size.height - (titleLabel?.font ?? _normalFont).lineHeight) / 4.0
         
         badgeLabel.frame.origin.x = textWidth + extraWidthSpace + 2.0
         badgeLabel.frame.origin.y = extraHeightSpace //- badgeLabel.frame.size.height
+        
+        if configuration.shouldShowBadgeCount {
+            badgeLabel.frame.origin.y = 0
+            badgeLabel.text = (badgeCount > configuration.maxBadgeCount) ? "\(configuration.maxBadgeCount)+" : "\(badgeCount)"
+            let height = (badgeLabel.font ?? _normalFont).lineHeight + configuration.badgeInset.top + configuration.badgeInset.bottom
+            badgeLabel.frame.size.height = height
+            let width = self.textSizeCount(forString: (badgeLabel.text ?? "b"), withFont: badgeLabel.font ?? _normalFont, bundingSize: CGSize(width: 10000.0, height: badgeLabel.frame.height)).width + configuration.badgeInset.left + configuration.badgeInset.right
+            
+            badgeLabel.frame.size.width = max(height, width)
+            badgeLabel.textAlignment = .center
+            badgeLabel.layer.cornerRadius = height / 2.0
+        }
+        
         badgeLabel.isHidden = badgeCount == 0
     }
     

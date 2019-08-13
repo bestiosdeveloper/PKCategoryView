@@ -42,7 +42,10 @@ open class PKCategoryView: UIView {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
+    func setBadge(count: Int, atIndex index: Int) {
+        self.navBar?.setBadge(count: count, atIndex: index)
+    }
 }
 
 //MARK:- Subviews Setup

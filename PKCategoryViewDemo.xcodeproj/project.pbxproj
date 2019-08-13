@@ -20,6 +20,7 @@
 		181C852F22FC103F00D42C5E /* PKCategoryViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C852E22FC103F00D42C5E /* PKCategoryViewConfiguration.swift */; };
 		181C853122FC4CE500D42C5E /* PKContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C853022FC4CE500D42C5E /* PKContainerView.swift */; };
 		181C853322FC4F8000D42C5E /* TabChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C853222FC4F8000D42C5E /* TabChildVC.swift */; };
+		18DC2DFC2302C30200071E7F /* Example_dot_count.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DC2DFB2302C30200071E7F /* Example_dot_count.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		181C852E22FC103F00D42C5E /* PKCategoryViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCategoryViewConfiguration.swift; sourceTree = "<group>"; };
 		181C853022FC4CE500D42C5E /* PKContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKContainerView.swift; sourceTree = "<group>"; };
 		181C853222FC4F8000D42C5E /* TabChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabChildVC.swift; sourceTree = "<group>"; };
+		18DC2DFB2302C30200071E7F /* Example_dot_count.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Example_dot_count.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				181C852722FC0E5900D42C5E /* PKCategoryView */,
 				181C851522FC0E3800D42C5E /* AppDelegate.swift */,
+				18DC2DFB2302C30200071E7F /* Example_dot_count.png */,
 				181BEB342302A8A30054DEFA /* dynamic.gif */,
 				181BEB332302A8A30054DEFA /* static.gif */,
 				181C851722FC0E3800D42C5E /* ViewController.swift */,
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DC2DFC2302C30200071E7F /* Example_dot_count.png in Resources */,
 				181C852022FC0E3A00D42C5E /* LaunchScreen.storyboard in Resources */,
 				181BEB362302A8A30054DEFA /* dynamic.gif in Resources */,
 				181C851D22FC0E3A00D42C5E /* Assets.xcassets in Resources */,

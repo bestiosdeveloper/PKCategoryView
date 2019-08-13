@@ -56,6 +56,9 @@ public struct PKCategoryViewConfiguration {
     public var badgeTextColor = UIColor.white
     public var badgeDotSize = CGSize(width: 8.0, height: 8.0)
     public var badgeTextFont = UIFont.systemFont(ofSize: 12.0)
+    public var badgeInset: UIEdgeInsets = UIEdgeInsets(top: 1.0, left: 3.0, bottom: 1.0, right: 3.0)
+    public var maxBadgeCount: Int = 99
+    public var shouldShowBadgeCount: Bool = false
     
     public var badgeBorderWidth: CGFloat = 1.0
     public var badgeBorderColor = UIColor.green
