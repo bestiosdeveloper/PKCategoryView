@@ -60,8 +60,8 @@ public struct PKCategoryViewConfiguration {
     public var maxBadgeCount: Int = 99
     public var shouldShowBadgeCount: Bool = false
     
-    public var badgeBorderWidth: CGFloat = 1.0
-    public var badgeBorderColor = UIColor.green
+    public var badgeBorderWidth: CGFloat = 0.0
+    public var badgeBorderColor = UIColor.clear
     
     //##################
     
