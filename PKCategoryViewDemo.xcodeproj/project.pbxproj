@@ -23,6 +23,7 @@
 		18DC2DFC2302C30200071E7F /* Example_dot_count.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DC2DFB2302C30200071E7F /* Example_dot_count.png */; };
 		18DC2DFE2302C64D00071E7F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18DC2DFD2302C64D00071E7F /* README.md */; };
 		18DC2E002302C65500071E7F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 18DC2DFF2302C65500071E7F /* LICENSE */; };
+		18DC2E022302CCCD00071E7F /* PKCategoryView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 18DC2E012302CCCD00071E7F /* PKCategoryView.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		18DC2DFB2302C30200071E7F /* Example_dot_count.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Example_dot_count.png; sourceTree = "<group>"; };
 		18DC2DFD2302C64D00071E7F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		18DC2DFF2302C65500071E7F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		18DC2E012302CCCD00071E7F /* PKCategoryView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PKCategoryView.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		181C851422FC0E3800D42C5E /* PKCategoryViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18DC2E012302CCCD00071E7F /* PKCategoryView.podspec */,
 				181C852722FC0E5900D42C5E /* PKCategoryView */,
 				181C851522FC0E3800D42C5E /* AppDelegate.swift */,
 				18DC2DFB2302C30200071E7F /* Example_dot_count.png */,
@@ -167,6 +170,7 @@
 				181C852022FC0E3A00D42C5E /* LaunchScreen.storyboard in Resources */,
 				18DC2E002302C65500071E7F /* LICENSE in Resources */,
 				181BEB362302A8A30054DEFA /* dynamic.gif in Resources */,
+				18DC2E022302CCCD00071E7F /* PKCategoryView.podspec in Resources */,
 				18DC2DFE2302C64D00071E7F /* README.md in Resources */,
 				181C851D22FC0E3A00D42C5E /* Assets.xcassets in Resources */,
 				181BEB352302A8A30054DEFA /* static.gif in Resources */,

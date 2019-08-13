@@ -3,7 +3,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/p/FaveButton.svg)](https://cocoapods.org/pods/PKCategoryView)
 [![codebeat badge](https://codebeat.co/badges/580517f8-efc8-4d20-89aa-900531610144)](https://codebeat.co/projects/github-com-bestiosdeveloper-pkcategoryview-master)
 
-PKCategoryView helps you to create dynamic UITabBarController, that will manage be managed on scrolling or tap on the tab
+PKCategoryView helps you to create dynamic UITabBarController, that will manage be managed on scrolling or tap on the tab.
 
 
 ![preview](https://github.com/bestiosdeveloper/PKCategoryView/blob/master/PKCategoryViewDemo/static.gif)
