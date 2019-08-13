@@ -28,6 +28,7 @@ pod 'PKCategoryView'
 
 #### For Static Tabs
 It'll adjust all the tabs in the `PKCategoryView`'s width.
+
 ![preview](https://github.com/bestiosdeveloper/PKCategoryView/blob/master/PKCategoryViewDemo/static.gif)
 
 Code example for setup:
@@ -67,6 +68,7 @@ self.view.addSubview(catView)
 #### For Dynamic Tabs
 
 It'll make the navBar as scrollable.
+
 ![preview](https://github.com/bestiosdeveloper/PKCategoryView/blob/master/PKCategoryViewDemo/dynamic.gif)
 
 Code example for setup:
@@ -108,6 +110,7 @@ Code example for setup:
 catView.setBadge(count: 4, atIndex: 1)
 ```
 Note: Badge can be set the the count or just a dot, refer the configuration properties for setting up the things
+
 ![preview](https://github.com/bestiosdeveloper/PKCategoryView/blob/master/PKCategoryViewDemo/Example_dot_count.png)
 
 ## Delegates
