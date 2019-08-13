@@ -46,7 +46,7 @@ public struct PKCategoryViewConfiguration {
     public var indicatorHeight:CGFloat = 2.0
     public var indicatorColor:UIColor = #colorLiteral(red: 0.9568627451, green: 0.6784313725, blue: 0.3843137255, alpha: 1)
     
-
+    
     //##################
     
     //###### Badge related
@@ -78,4 +78,10 @@ public struct PKCategoryItem {
     public var title: String?
     public var normalImage: UIImage?
     public var selectedImage: UIImage?
+    
+    public init(title: String?, normalImage: UIImage?, selectedImage: UIImage?) {
+        self.title = title
+        self.normalImage = normalImage
+        self.selectedImage = selectedImage
+    }
 }

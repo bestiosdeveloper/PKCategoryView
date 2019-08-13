@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol PKCategoryViewDelegate: class {
+public protocol PKCategoryViewDelegate: class {
     func categoryView(_ view: PKCategoryView, willSwitchIndexFrom fromIndex: Int, to toIndex: Int)
     func categoryView(_ view: PKCategoryView, didSwitchIndexTo toIndex: Int)
 }
 
 open class PKCategoryView: UIView {
-
+    
     //Mark:- Properties
     //MARK:- Private
     public fileprivate(set) var navBar: PKCategoryNavBar!
@@ -24,7 +24,7 @@ open class PKCategoryView: UIView {
     private var containerView: PKContainerView!
     private var willSwitchDelegateCalledInProgress: Bool = false
     
-    weak var delegate: PKCategoryViewDelegate?
+    public weak var delegate: PKCategoryViewDelegate?
     
     //Mark:- Life Cycle
     //MARK:-
@@ -35,7 +35,7 @@ open class PKCategoryView: UIView {
         self.parentVC = parentVC
         
         super.init(frame: frame)
-                
+        
         setupSubviews()
     }
     
@@ -43,7 +43,7 @@ open class PKCategoryView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setBadge(count: Int, atIndex index: Int) {
+    public func setBadge(count: Int, atIndex index: Int) {
         self.navBar?.setBadge(count: count, atIndex: index)
     }
 }

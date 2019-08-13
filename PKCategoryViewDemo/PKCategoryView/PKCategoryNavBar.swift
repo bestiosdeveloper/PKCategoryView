@@ -292,7 +292,7 @@ private extension PKCategoryNavBar {
         
         defer {
             if configuration.isNavBarScrollEnabled {
-
+                
                 let lowerBound = self.scrollView.frame.size.width * 0.5
                 let upperBound = self.scrollView.contentSize.width - lowerBound
                 
