@@ -293,12 +293,14 @@ private extension PKCategoryNavBar {
         defer {
             if configuration.isNavBarScrollEnabled {
                 
+                self.shouldMoveNavContent = false
+                
                 let lowerBound = self.scrollView.frame.size.width * 0.5
                 let upperBound = self.scrollView.contentSize.width - lowerBound
                 
                 self.shouldMoveNavContent = false
                 
-                if lowerBound...upperBound ~= self.indicator.center.x {
+                if lowerBound < upperBound, lowerBound...upperBound ~= self.indicator.center.x {
                     self.shouldMoveNavContent = true
                     self.scrollToCenter(currentBtn: currentBtn, animated: true)
                 }
@@ -306,7 +308,7 @@ private extension PKCategoryNavBar {
                     //set scroll view to start
                     self.scrollView.setContentOffset(CGPoint.zero, animated: true)
                 }
-                else if indicator.center.x > upperBound {
+                else if lowerBound < upperBound, indicator.center.x > upperBound {
                     //set scroll view to end
                     self.scrollView.setContentOffset(CGPoint(x: (upperBound - lowerBound), y: 0.0), animated: true)
                 }

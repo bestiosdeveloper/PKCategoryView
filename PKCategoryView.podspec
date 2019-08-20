@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "PKCategoryView"
-s.version      = "0.1.2"
+s.version      = "0.1.3"
 s.summary      = "A Swift based helper class that helps to create dynamic UITabBarController."
 
 s.description  = <<-DESC

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         var config = PKCategoryViewConfiguration()
-        config.isNavBarScrollEnabled = false
+        config.isNavBarScrollEnabled = true
         config.normalColor = #colorLiteral(red: 0, green: 0.8, blue: 0.6, alpha: 1).withAlphaComponent(0.5)
         config.selectedColor = #colorLiteral(red: 0, green: 0.8, blue: 0.6, alpha: 1)
         config.indicatorColor = #colorLiteral(red: 0, green: 0.8, blue: 0.6, alpha: 1)
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
 //        let titleArr = ["Pizza", "Sushi", "Bread", "Chocolate", "Massaman curry", "Buttered popcorn", "Hamburger", "Chicken", "Rendang", "Donuts"]
         
-        let titleArr = ["Sushi", "Kebab", "Pizza", "Bread"]
+        let titleArr = ["Sushi", "Kebab"]//, "Pizza", "Bread"]
         let allTab = titleArr.map { PKCategoryItem(title: $0, normalImage: nil, selectedImage:nil) }
         
         var allChild: [TabChildVC] = []
